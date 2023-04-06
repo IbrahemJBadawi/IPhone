@@ -1,0 +1,137 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --header-height: 3rem;
+    /*COLORS*/
+    --hover-color: hsl(228, 12%, 85%);
+    --text-color: #fff;
+
+    /*Font and typography*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*Font weight*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*margenes*/
+    --md-1: .5rem;
+    --md-2: 1rem;
+    --md-3: 1.5rem;
+    --md-4: 2rem;
+    --md-5: 2.5rem;
+    --md-6: 3rem;
+
+    /*z index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}
+.container{
+    background-color: #000;
+    min-height: 100vh;
+    width: 100%;
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: .3s;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: var(--font-semi-bold);
+    margin: 0 10px;
+    transition: .3s;
+}
+ul li a:hover{
+    color: var(--hover-color);
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text{
+    width: 40%;
+}
+.content .text h2{
+    font-size: var(--biggest-font-size);
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0;
+    margin-bottom: 40px;
+}
+.content .text a{
+    text-decoration: none;
+    background-color: var(--text-color);
+    color: #000;
+    font-weight: var(--font-medium);
+    border: 2px solid transparent;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .4s;
+}
+.content .text a:hover{
+    background-color: var(--hover-color);
+}
+.content .image{
+    width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+/*.image__shope{
+    width: 150px;
+    height: 250px;
+    background: #eee;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+}*/
+
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icons img{
+    width: 50px;
+    transition: .5s;
+}
+.icons img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
